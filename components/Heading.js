@@ -1,11 +1,11 @@
 import { Text, View } from 'react-native';
 import styles from '../styles/HeadingStyle';
 
-const MainHeader = () => {
+const Heading = () => {
   return (
     <View>
-      <Text style={styles.bigBlue}>CityPops</Text>
+      <Text>CityPops</Text>
     </View>
   )
 }
-export default MainHeader;
+export default Heading;
