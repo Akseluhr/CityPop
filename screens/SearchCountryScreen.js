@@ -8,7 +8,7 @@ import styles from "../styles/ViewStyle"
 const SearchCountryScreen = () => {
     return (
         <View style={styles.viewContainer}>
-          <Heading   text="CityPop" />
+          <Heading   text="SEARCH BY COUNTRY" />
           <TextInputBox plcHolder="Enter a country..."/>
           <SearchButton />
        </View>
