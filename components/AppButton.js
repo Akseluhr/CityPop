@@ -3,7 +3,7 @@ import styles from '../styles/ButtonsStyle';
 
 const AppButton= (props) => {
   return (
-    <View>
+    <View style={styles.buttonContainer}>
       <TouchableOpacity style={styles.appButtonContainer}>
           <Text style={styles.appButtonText}>{props.text}</Text>
       </TouchableOpacity>

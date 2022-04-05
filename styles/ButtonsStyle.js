@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
     searchButton: {
         width:  60,
-        height: 60
+        height: 60,
     }
   });
 export default styles
