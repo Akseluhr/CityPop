@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
         elevation: 8,
         borderRadius: 10,
         marginBottom: 10,
-        height:100,
+        height:150,
         borderLeftWidth: 2,
         borderRightWidth: 2,
         borderTopWidth: 2,
         borderBottomWidth: 2,
-        borderColor: "#002D62",
+        borderColor: "black",
         justifyContent: 'center'
     },
     // TODO: Check names here and in ButtonStyle
