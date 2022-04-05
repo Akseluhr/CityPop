@@ -1,10 +1,10 @@
 import { Text, View } from 'react-native';
 import styles from '../styles/HeadingStyle';
 
-const Heading = () => {
+const Heading = (props) => {
   return (
     <View>
-      <Text>CityPops</Text>
+      <Text style={styles.mainHeader}>{props.text}</Text>
     </View>
   )
 }

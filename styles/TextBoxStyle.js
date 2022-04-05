@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    viewContainer:{
+    textBoxContainer:{
         width: "90%",
     },
     // TODO: Check names here and in ButtonStyle
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 2,
         paddingLeft: 10,
         justifyContent: 'center',
-        borderColor: "#002D62",
+        borderColor: "black",
     },
 })
 

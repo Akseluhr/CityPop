@@ -1,7 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    viewContainer:{
+
+    // TODO: check if safe to delete for each component
+    buttonContainer:{
         width: "90%",
 
     },
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
     },
     searchButton: {
         width:  60,
-        height: 60
+        height: 60,
     }
   });
 export default styles
