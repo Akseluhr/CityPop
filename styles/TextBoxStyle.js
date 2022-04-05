@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    viewContainer:{
+    textBoxContainer:{
         width: "90%",
     },
     // TODO: Check names here and in ButtonStyle

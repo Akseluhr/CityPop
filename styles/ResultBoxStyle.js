@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    viewContainer:{
+    resultBoxContainer:{
         width: "90%",
         // check elevation
         elevation: 8,

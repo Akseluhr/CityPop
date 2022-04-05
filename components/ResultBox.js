@@ -3,7 +3,7 @@ import styles from '../styles/ResultBoxStyle';
 
 const ResultBox = () => {
   return (
-    <View style={styles.viewContainer}>
+    <View style={styles.resultContainer}>
       <Text style={styles.resultText}>TODO: Add results</Text>
     </View>
   )

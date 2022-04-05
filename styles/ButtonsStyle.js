@@ -1,7 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    viewContainer:{
+
+    // TODO: check if safe to delete for each component
+    buttonContainer:{
         width: "90%",
 
     },

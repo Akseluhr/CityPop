@@ -1,12 +1,14 @@
 import { Text, TouchableOpacity, View } from 'react-native';
 import styles from '../styles/ButtonsStyle';
 
-const AppButton= () => {
+const AppButton= (props) => {
   return (
-    <View style={styles.viewContainer}>
+    <View>
       <TouchableOpacity style={styles.appButtonContainer}>
-          <Text style={styles.appButtonText}>Hej</Text>
+          <Text style={styles.appButtonText}>{props.text}</Text>
       </TouchableOpacity>
+
+      { /* if props.icon == true ? <show search icon> </show> : appbutonc */ }
     </View>
   )
 }
