@@ -5,12 +5,12 @@ import TextInputBox from "../components/TextInput"
 //import styles from "../styles/ButtonsStyle"
 import styles from "../styles/ViewStyle"
 
-const SearchCityScreen = () => {
+const SearchCityScreen = ({navigation}) => {
     return (
         <View style={styles.viewContainer}>
           <Heading   text="SEARCH BY CITY" />
           <TextInputBox plcHolder="Enter a city..."/>
-          <SearchButton />
+          <SearchButton onPress={() => navigation.navigate("CityResults")}/>
        </View>
     )
   }

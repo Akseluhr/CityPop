@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
       textAlign: "center",
       fontWeight: "bold",
       fontSize: 30,
-      top: -200
+      top: -150
     },
   });
 export default styles

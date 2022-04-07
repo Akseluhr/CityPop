@@ -2,16 +2,16 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import styles from '../styles/ButtonsStyle';
 //import Ionicons from '@expo/vector-icons/Ionicons';
 
-const SearchButton= () => {
+const SearchButton= ({onPress}) => {
   return (
-    <View>
-      <TouchableOpacity>
+
+      <TouchableOpacity onPress={onPress}>
           <Image 
             style={styles.searchButton}
             source={require('../assets/search.png')} 
           /> 
       </TouchableOpacity>
-    </View>
+
   )
 }
 export default SearchButton;
