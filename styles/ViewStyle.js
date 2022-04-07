@@ -2,8 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     viewContainer: {
-      width: "90%",
+      flex: 1,
+      width: "100%",
       alignItems: 'center',
+      justifyContent: 'center',
+      marginTop: '-10%'
+
     },
   });
   

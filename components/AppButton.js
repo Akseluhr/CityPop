@@ -1,15 +1,15 @@
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Button, Text, TouchableOpacity, View } from 'react-native';
 import styles from '../styles/ButtonsStyle';
 
-const AppButton= (props) => {
+const AppButton= ({text, onPress}) => {
   return (
-    <View style={styles.buttonContainer}>
-      <TouchableOpacity style={styles.appButtonContainer}>
-          <Text style={styles.appButtonText}>{props.text}</Text>
+    <View style={styles.appButtonContainer}>
+      <TouchableOpacity onPress={onPress}>
+          <Text style={styles.appButtonText}>{text}</Text>
       </TouchableOpacity>
-
-      { /* if props.icon == true ? <show search icon> </show> : appbutonc */ }
     </View>
+      //{ /* if props.icon == true ? <show search icon> </show> : appbutonc */ }
+
   )
 }
 export default AppButton;

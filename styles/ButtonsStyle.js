@@ -9,10 +9,11 @@ const styles = StyleSheet.create({
     },
     appButtonContainer: {
         elevation: 8,
-        backgroundColor: "#002D62",
+        backgroundColor: "#34568B",
         borderRadius: 10,
         marginBottom: 10,
         height:70,
+        width: '90%',
         justifyContent: 'center'
     },
     appButtonText: {
