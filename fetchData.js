@@ -1,26 +1,23 @@
-const fetchGeoData =(userInput) => {
+const fetchGeoData = (userInput) => {
   const promise = new Promise((resolve, reject) => {
-    let request = new XMLHttpRequest();
-    request.responseType = "json";
-    request.open("GET", "http://api.geonames.org/searchJSON?q="+userInput+"&username=weknowit")
-    request.send();
+    const request = new XMLHttpRequest()
+    request.responseType = 'json'
+    request.open('GET', 'http://api.geonames.org/searchJSON?q=' + userInput + '&username=weknowit')
+    request.send()
     request.onload = () => {
-      console.log(request);
-      if(request.status == 200){
+      console.log(request)
+      if (request.status == 200) {
         resolve(request.response)
-      }
-      else{
+      } else {
         console.log('error')
         reject(request.response)
       }
     }
-  });
-  return promise;
+  })
+  return promise
 }
 
-export {fetchGeoData};
-
-
+export { fetchGeoData }
 
 /* Didn't work
 

@@ -1,6 +1,7 @@
-import { Text, View } from 'react-native';
-import styles from '../styles/HeadingStyle';
+import { Text, View } from 'react-native'
+import styles from '../styles/HeadingStyle'
 
+// CityPop's main heading.
 const Heading = (props) => {
   return (
     <View>
@@ -8,4 +9,4 @@ const Heading = (props) => {
     </View>
   )
 }
-export default Heading;
+export default Heading
