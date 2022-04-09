@@ -1,8 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
     textBoxContainer:{
-        width: "90%",
+        width: Platform.OS === 'ios' || Platform.OS === 'android' ? '90%' : '25%',
     },
     // TODO: Check names here and in ButtonStyle
     textBox: {
