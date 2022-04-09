@@ -7,8 +7,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '-10%',
-    top: 100
+    marginTop: '-15%',
   }
 })
 

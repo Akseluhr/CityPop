@@ -1,6 +1,6 @@
 {
-  "expoServerPort": 19001,
-  "devToolsPort": 19003,
-  "packagerPort": 19001,
+  "expoServerPort": 19002,
+  "devToolsPort": 19004,
+  "packagerPort": 19002,
   "webpackServerPort": 19006
 }
