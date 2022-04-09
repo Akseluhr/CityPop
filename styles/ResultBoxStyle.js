@@ -1,8 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
     resultBoxContainer:{
-        width: "90%",
+        width: Platform.OS === 'ios' || Platform.OS === 'android' ? '90%' : '25%',
         // check elevation
         elevation: 8,
         borderRadius: 10,
@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
     populationText: {
         fontSize: 18,
         textAlign: 'center',
-        paddingBottom: 15
     },
     // TODO: Check names here and in ButtonStyle
     resultText: {
         fontSize: 30,
-        textAlign: 'center'
+        textAlign: 'center',
+
     },
 })
 

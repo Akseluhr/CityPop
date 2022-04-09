@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
 
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginBottom: 10,
         height:70,
-        width: '90%',
+        width: Platform.OS === 'ios' || Platform.OS === 'android' ? '90%' : '25%',
         justifyContent: 'center'
     },
     appButtonText: {
