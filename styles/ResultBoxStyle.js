@@ -15,6 +15,11 @@ const styles = StyleSheet.create({
         borderColor: "black",
         justifyContent: 'center'
     },
+    populationText: {
+        fontSize: 18,
+        textAlign: 'center',
+        paddingBottom: 15
+    },
     // TODO: Check names here and in ButtonStyle
     resultText: {
         fontSize: 30,

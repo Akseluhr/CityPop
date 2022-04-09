@@ -15,11 +15,11 @@ export default function App() {
 
       <NavigationContainer> 
         <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="CityPop" component={HomeScreen} options={{headerTitle: "CityPops"}}/>
-          <Stack.Screen name="SearchCity" component={SearchCityScreen} options={{headerTitle: "CityPops"}}/>
-          <Stack.Screen name="SearchCountry" component={SearchCountryScreen} options={{headerTitle: "CityPops"}}/>
-          <Stack.Screen name="CityResults" component={CityResultScreen} options={{headerTitle: "CityPops"}}/>
-          <Stack.Screen name="CountryResults" component={CountryResultScreen} options={{headerTitle: "CityPops"}}/>
+          <Stack.Screen name="CityPop" component={HomeScreen} options={{headerTitle: "CityPop"}}/>
+          <Stack.Screen name="SearchCity" component={SearchCityScreen} options={{headerTitle: "CityPop"}}/>
+          <Stack.Screen name="SearchCountry" component={SearchCountryScreen} options={{headerTitle: "CityPop"}}/>
+          <Stack.Screen name="CityResults" component={CityResultScreen} options={{headerTitle: "CityPop"}}/>
+          <Stack.Screen name="CountryResults" component={CountryResultScreen} options={{headerTitle: "CityPop"}}/>
         </Stack.Navigator>
       </NavigationContainer>
 

@@ -5,7 +5,7 @@ import styles from '../styles/TextBoxStyle';
 const TextInputBox= (props) => {
   return (
     <View style={styles.textBoxContainer}>
-      <TextInput style={styles.textBox} placeholder={props.plcHolder}></TextInput>
+      <TextInput style={styles.textBox} placeholder={props.plcHolder} value={props.value} onChangeText={props.onChangeText}></TextInput>
     </View>
   )
 }
