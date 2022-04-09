@@ -1,6 +1,6 @@
 # CityPop
 
-In this cross platform application, the user is able to search for cities and countries.
+In this cross platform application, the user is able to search for different cities population.
 The application has been developed using Expo Go and tested on the ios platform and in Google Chrome.
 Further testing involves verificaiton of design and functionality on the android platform. 
 
