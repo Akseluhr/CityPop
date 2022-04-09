@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, ActivityIndicator } from 'react-native';
+import { View, ActivityIndicator, Alert } from 'react-native';
 import Heading from "../components/Heading";
 import SearchButton from '../components/SearchButton';
 import TextInputBox from "../components/TextInput"
@@ -11,12 +11,14 @@ const SearchCityScreen = ({navigation}) => {
   const [isLoading, setIsLoading] = useState(false)
   const [inputText, setText] = useState('')
   const [population, setPopulation] = useState()
-  const [name, setName] = useState('')
 
   const handleResponse = (r) => {
-    console.log(r)
-    setPopulation(r['geonames'][0]['population'])
-    setName(r['geonames'][0]['name'])
+    if(r['totalResultsCount'] == 0){
+      alert("No results found, please try again.")
+    }else{
+      setPopulation(r['geonames'][0]['population'])
+      setName(r['geonames'][0]['name'])
+    }
   }
   const handleClick = () =>{
     setIsLoading(true)
@@ -24,13 +26,13 @@ const SearchCityScreen = ({navigation}) => {
   }
 
   useEffect(() => {
-    if(population > 0 && name != ''){
+    if(population > 0 && inputText != ''){
       navigation.navigate("CityResults", {
+        name: inputText.toUpperCase(),
         population: population,
-        name: name
       })
     }
-  }, [{population, name}])
+  }, [{population, inputText}])
     return (
         <View style={styles.viewContainer}>
           <Heading   text="SEARCH BY CITY" />

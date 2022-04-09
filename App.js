@@ -18,8 +18,8 @@ export default function App() {
           <Stack.Screen name="CityPop" component={HomeScreen} options={{headerTitle: "CityPop"}}/>
           <Stack.Screen name="SearchCity" component={SearchCityScreen} options={{headerTitle: "CityPop"}}/>
           <Stack.Screen name="SearchCountry" component={SearchCountryScreen} options={{headerTitle: "CityPop"}}/>
-          <Stack.Screen name="CityResults" component={CityResultScreen} options={{headerTitle: "CityPop"}}/>
           <Stack.Screen name="CountryResults" component={CountryResultScreen} options={{headerTitle: "CityPop"}}/>
+          <Stack.Screen name="CityResults" component={CityResultScreen} options={{headerTitle: "CityPop"}}/>
         </Stack.Navigator>
       </NavigationContainer>
 

@@ -15,26 +15,30 @@ const SearchCountryScreen = ({navigation}) => {
 
 
   const handleResponse = (r) => {
-    let cities = []
-
-    for(let i = 0; i < r['geonames'].length; i++){
-      if(r['geonames'][i]['fclName'].includes("city")){
-        cities.push(r['geonames'][i])
-      }
-    }
-
-    //Sort in descending order
-    cities.sort((a, b) => b['population'] - a['population'])
-    let largestCitiesByPop = cities.slice(0, 3)
-
-    for(let i = 0; i < largestCitiesByPop.length; i++){
-      console.log(largestCitiesByPop[i]['population'])
-      setPopulations(e => [...e, largestCitiesByPop[i]['population']])
-      setNames(e =>[...e, largestCitiesByPop[i]['name']])
-    }
     
+    if(r['totalResultsCount'] == 0){
+      alert("No results found, please try again.")
+    }else{
+      let cities = []
+
+      for(let i = 0; i < r['geonames'].length; i++){
+        if(r['geonames'][i]['fclName'].includes("city")){
+          cities.push(r['geonames'][i])
+        }
+      }
   
+      //Sort in descending order
+      cities.sort((a, b) => b['population'] - a['population'])
+      let largestCitiesByPop = cities.slice(0, 3)
+  
+      for(let i = 0; i < largestCitiesByPop.length; i++){
+        console.log(largestCitiesByPop[i]['population'])
+        setPopulations(e => [...e, largestCitiesByPop[i]['population']])
+        setNames(e =>[...e, largestCitiesByPop[i]['name']])
+      }  
+    }
   }
+  
   const handleClick = () =>{
     setIsLoading(true)
     fetchGeoData(inputText).then(response => {handleResponse(response), setIsLoading(false)})
