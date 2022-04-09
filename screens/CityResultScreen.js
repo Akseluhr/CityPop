@@ -3,12 +3,12 @@ import Heading from "../components/Heading";
 import ResultBox from '../components/ResultBox';
 import styles from "../styles/ViewStyle"
 
-const CityResult = () => {
+const CityResult = ({route}) => {
     return (
         <View style={styles.viewContainer}>
           {/* Add api call results to text props of heading and buttons */}
-          <Heading   text="todo: city name" />
-          <ResultBox totalPopulation="todo: add population"/>
+          <Heading   text={route.params.name} />
+          <ResultBox totalPopulation={route.params.population}/>
        </View>
     )
   }
