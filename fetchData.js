@@ -1,3 +1,5 @@
+// Fetches the data from an end pouint based on user input.
+// Either resolves or rejects the request.
 const fetchGeoData = (userInput) => {
   const promise = new Promise((resolve, reject) => {
     const request = new XMLHttpRequest()
@@ -19,12 +21,3 @@ const fetchGeoData = (userInput) => {
 
 export { fetchGeoData }
 
-/* Didn't work
-
-const fetchGeoData1 = () => {
-    fetch('http://api.geonames.org/searchJSON?q=london&maxRows=10&username=weknowit')
-      .then(response => response.json)
-      .then(data => console.log(data));
-    }
-
-*/
